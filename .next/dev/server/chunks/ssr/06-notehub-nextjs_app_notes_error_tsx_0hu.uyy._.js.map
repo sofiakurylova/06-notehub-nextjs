@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///Users/sofiavelikaa/Downloads/notehub-nextjs%202/06-notehub-nextjs/app/notes/error.tsx"],"sourcesContent":["'use client';\n\nexport default function NotesError({ error }: { error: Error }) {\n  return <p>Could not fetch the list of notes. {error.message}</p>;\n}\n"],"names":["NotesError","error","message"],"mappings":";;;;;AAAA;;AAEe,SAASA,WAAW,EAAEC,KAAK,EAAoB;IAC5D,qBAAO,yQAAC;;YAAE;YAAoCA,MAAMC,OAAO;;;;;;;AAC7D"}}]
+}

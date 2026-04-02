@@ -297,89 +297,27 @@ __turbopack_context__.s([
     ()=>Pagination
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$06$2d$notehub$2d$nextjs$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/06-notehub-nextjs/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$06$2d$notehub$2d$nextjs$2f$node_modules$2f$react$2d$paginate$2f$dist$2f$react$2d$paginate$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/06-notehub-nextjs/node_modules/react-paginate/dist/react-paginate.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$06$2d$notehub$2d$nextjs$2f$components$2f$Pagination$2f$Pagination$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__ = __turbopack_context__.i("[project]/06-notehub-nextjs/components/Pagination/Pagination.module.css [app-ssr] (css module)");
 'use client';
 ;
 ;
+;
 function Pagination({ totalPages, currentPage, onPageChange }) {
-    const getPageNumbers = ()=>{
-        const pages = [];
-        const maxVisible = 5;
-        if (totalPages <= maxVisible) {
-            for(let i = 1; i <= totalPages; i++){
-                pages.push(i);
-            }
-        } else {
-            if (currentPage <= 3) {
-                for(let i = 1; i <= 4; i++)pages.push(i);
-                pages.push('...');
-                pages.push(totalPages);
-            } else if (currentPage >= totalPages - 2) {
-                pages.push(1);
-                pages.push('...');
-                for(let i = totalPages - 3; i <= totalPages; i++)pages.push(i);
-            } else {
-                pages.push(1);
-                pages.push('...');
-                for(let i = currentPage - 1; i <= currentPage + 1; i++)pages.push(i);
-                pages.push('...');
-                pages.push(totalPages);
-            }
-        }
-        return pages;
-    };
-    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$06$2d$notehub$2d$nextjs$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
-        className: __TURBOPACK__imported__module__$5b$project$5d2f$06$2d$notehub$2d$nextjs$2f$components$2f$Pagination$2f$Pagination$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].pagination,
-        children: [
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$06$2d$notehub$2d$nextjs$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                className: currentPage === 1 ? __TURBOPACK__imported__module__$5b$project$5d2f$06$2d$notehub$2d$nextjs$2f$components$2f$Pagination$2f$Pagination$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].disabled : '',
-                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$06$2d$notehub$2d$nextjs$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                    onClick: ()=>currentPage > 1 && onPageChange(currentPage - 1),
-                    children: "<"
-                }, void 0, false, {
-                    fileName: "[project]/06-notehub-nextjs/components/Pagination/Pagination.tsx",
-                    lineNumber: 44,
-                    columnNumber: 9
-                }, this)
-            }, void 0, false, {
-                fileName: "[project]/06-notehub-nextjs/components/Pagination/Pagination.tsx",
-                lineNumber: 43,
-                columnNumber: 7
-            }, this),
-            getPageNumbers().map((page, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$06$2d$notehub$2d$nextjs$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                    className: page === currentPage ? __TURBOPACK__imported__module__$5b$project$5d2f$06$2d$notehub$2d$nextjs$2f$components$2f$Pagination$2f$Pagination$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].active : page === '...' ? __TURBOPACK__imported__module__$5b$project$5d2f$06$2d$notehub$2d$nextjs$2f$components$2f$Pagination$2f$Pagination$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].ellipsis : '',
-                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$06$2d$notehub$2d$nextjs$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                        onClick: ()=>typeof page === 'number' && onPageChange(page),
-                        children: page
-                    }, void 0, false, {
-                        fileName: "[project]/06-notehub-nextjs/components/Pagination/Pagination.tsx",
-                        lineNumber: 51,
-                        columnNumber: 11
-                    }, this)
-                }, index, false, {
-                    fileName: "[project]/06-notehub-nextjs/components/Pagination/Pagination.tsx",
-                    lineNumber: 47,
-                    columnNumber: 9
-                }, this)),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$06$2d$notehub$2d$nextjs$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                className: currentPage === totalPages ? __TURBOPACK__imported__module__$5b$project$5d2f$06$2d$notehub$2d$nextjs$2f$components$2f$Pagination$2f$Pagination$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].disabled : '',
-                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$06$2d$notehub$2d$nextjs$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                    onClick: ()=>currentPage < totalPages && onPageChange(currentPage + 1),
-                    children: ">"
-                }, void 0, false, {
-                    fileName: "[project]/06-notehub-nextjs/components/Pagination/Pagination.tsx",
-                    lineNumber: 57,
-                    columnNumber: 9
-                }, this)
-            }, void 0, false, {
-                fileName: "[project]/06-notehub-nextjs/components/Pagination/Pagination.tsx",
-                lineNumber: 56,
-                columnNumber: 7
-            }, this)
-        ]
-    }, void 0, true, {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$06$2d$notehub$2d$nextjs$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$06$2d$notehub$2d$nextjs$2f$node_modules$2f$react$2d$paginate$2f$dist$2f$react$2d$paginate$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+        pageCount: totalPages,
+        forcePage: currentPage - 1,
+        onPageChange: ({ selected })=>onPageChange(selected + 1),
+        pageRangeDisplayed: 5,
+        marginPagesDisplayed: 1,
+        containerClassName: __TURBOPACK__imported__module__$5b$project$5d2f$06$2d$notehub$2d$nextjs$2f$components$2f$Pagination$2f$Pagination$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].pagination,
+        activeClassName: __TURBOPACK__imported__module__$5b$project$5d2f$06$2d$notehub$2d$nextjs$2f$components$2f$Pagination$2f$Pagination$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].active,
+        disabledClassName: __TURBOPACK__imported__module__$5b$project$5d2f$06$2d$notehub$2d$nextjs$2f$components$2f$Pagination$2f$Pagination$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"].disabled,
+        nextLabel: ">",
+        previousLabel: "<"
+    }, void 0, false, {
         fileName: "[project]/06-notehub-nextjs/components/Pagination/Pagination.tsx",
-        lineNumber: 42,
+        lineNumber: 14,
         columnNumber: 5
     }, this);
 }

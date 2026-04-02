@@ -6,3 +6,5 @@
 {"timestamp":"00:10:57.743","source":"Server","level":"LOG","message":"  Reload env: .env.local"}
 {"timestamp":"00:16:18.353","source":"Server","level":"LOG","message":"  Reload env: .env.local"}
 {"timestamp":"00:16:18.490","source":"Server","level":"LOG","message":"✓ Compiled in 18ms"}
+{"timestamp":"00:38:35.774","source":"Server","level":"LOG","message":"✓ Compiled in 41ms"}
+{"timestamp":"00:39:16.887","source":"Server","level":"LOG","message":"✓ Compiled in 30ms"}
